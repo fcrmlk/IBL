@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		184EF1C12898291C0076E5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1C02898291C0076E5A6 /* AppDelegate.swift */; };
-		184EF1C32898291C0076E5A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1C22898291C0076E5A6 /* SceneDelegate.swift */; };
-		184EF1C52898291C0076E5A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1C42898291C0076E5A6 /* ViewController.swift */; };
-		184EF1C82898291C0076E5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1C62898291C0076E5A6 /* Main.storyboard */; };
 		184EF1CA2898291E0076E5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1C92898291E0076E5A6 /* Assets.xcassets */; };
 		184EF1CD2898291E0076E5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1CB2898291E0076E5A6 /* LaunchScreen.storyboard */; };
+		184EF1D9289829840076E5A6 /* IBLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1D7289829840076E5A6 /* IBLViewController.swift */; };
+		184EF1DA289829840076E5A6 /* IBLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1D8289829840076E5A6 /* IBLViewController.xib */; };
+		184EF1DC289829D50076E5A6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1DB289829D50076E5A6 /* Coordinator.swift */; };
+		184EF1DF28982ADA0076E5A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1DE28982ADA0076E5A6 /* BaseViewController.swift */; };
+		184EF1E128982B370076E5A6 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E028982B370076E5A6 /* PersonModel.swift */; };
+		184EF1E5289830C50076E5A6 /* PersonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E3289830C50076E5A6 /* PersonsTableViewCell.swift */; };
+		184EF1E6289830C50076E5A6 /* PersonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1E4289830C50076E5A6 /* PersonsTableViewCell.xib */; };
+		184EF1E8289838E70076E5A6 /* IBLExtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E7289838E70076E5A6 /* IBLExtViewController.swift */; };
+		DDD4C5CA20639AFF684F2038 /* Pods_IBL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4366CB79C9C106614FFD590 /* Pods_IBL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10AB4B0400A8700060841A88 /* Pods-IBL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBL.debug.xcconfig"; path = "Target Support Files/Pods-IBL/Pods-IBL.debug.xcconfig"; sourceTree = "<group>"; };
 		184EF1BD2898291C0076E5A6 /* IBL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184EF1C02898291C0076E5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		184EF1C22898291C0076E5A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		184EF1C42898291C0076E5A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		184EF1C72898291C0076E5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184EF1C92898291E0076E5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184EF1CC2898291E0076E5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184EF1CE2898291E0076E5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184EF1D7289829840076E5A6 /* IBLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLViewController.swift; sourceTree = "<group>"; };
+		184EF1D8289829840076E5A6 /* IBLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IBLViewController.xib; sourceTree = "<group>"; };
+		184EF1DB289829D50076E5A6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		184EF1DE28982ADA0076E5A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		184EF1E028982B370076E5A6 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		184EF1E3289830C50076E5A6 /* PersonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewCell.swift; sourceTree = "<group>"; };
+		184EF1E4289830C50076E5A6 /* PersonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsTableViewCell.xib; sourceTree = "<group>"; };
+		184EF1E7289838E70076E5A6 /* IBLExtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLExtViewController.swift; sourceTree = "<group>"; };
+		BA65AE2B5F9743E31FC5A58B /* Pods-IBL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBL.release.xcconfig"; path = "Target Support Files/Pods-IBL/Pods-IBL.release.xcconfig"; sourceTree = "<group>"; };
+		D4366CB79C9C106614FFD590 /* Pods_IBL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD4C5CA20639AFF684F2038 /* Pods_IBL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041AB68C9070C4DF68FD7EC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10AB4B0400A8700060841A88 /* Pods-IBL.debug.xcconfig */,
+				BA65AE2B5F9743E31FC5A58B /* Pods-IBL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		09083E9C054ECDCF817F93DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4366CB79C9C106614FFD590 /* Pods_IBL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		184EF1B42898291C0076E5A6 = {
 			isa = PBXGroup;
 			children = (
 				184EF1BF2898291C0076E5A6 /* IBL */,
 				184EF1BE2898291C0076E5A6 /* Products */,
+				041AB68C9070C4DF68FD7EC8 /* Pods */,
+				09083E9C054ECDCF817F93DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +91,59 @@
 			isa = PBXGroup;
 			children = (
 				184EF1C02898291C0076E5A6 /* AppDelegate.swift */,
-				184EF1C22898291C0076E5A6 /* SceneDelegate.swift */,
-				184EF1C42898291C0076E5A6 /* ViewController.swift */,
-				184EF1C62898291C0076E5A6 /* Main.storyboard */,
+				184EF1DD289829D90076E5A6 /* Utility */,
+				184EF1D4289829460076E5A6 /* Model */,
+				184EF1D52898294D0076E5A6 /* View */,
+				184EF1D6289829540076E5A6 /* Controller */,
 				184EF1C92898291E0076E5A6 /* Assets.xcassets */,
 				184EF1CB2898291E0076E5A6 /* LaunchScreen.storyboard */,
 				184EF1CE2898291E0076E5A6 /* Info.plist */,
 			);
 			path = IBL;
+			sourceTree = "<group>";
+		};
+		184EF1D4289829460076E5A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				184EF1E028982B370076E5A6 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184EF1D52898294D0076E5A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184EF1E2289830B20076E5A6 /* Views */,
+				184EF1D7289829840076E5A6 /* IBLViewController.swift */,
+				184EF1D8289829840076E5A6 /* IBLViewController.xib */,
+				184EF1E7289838E70076E5A6 /* IBLExtViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184EF1D6289829540076E5A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		184EF1DD289829D90076E5A6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				184EF1DE28982ADA0076E5A6 /* BaseViewController.swift */,
+				184EF1DB289829D50076E5A6 /* Coordinator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		184EF1E2289830B20076E5A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				184EF1E3289830C50076E5A6 /* PersonsTableViewCell.swift */,
+				184EF1E4289830C50076E5A6 /* PersonsTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184EF1D12898291E0076E5A6 /* Build configuration list for PBXNativeTarget "IBL" */;
 			buildPhases = (
+				C083002B613C822083FE3C1B /* [CP] Check Pods Manifest.lock */,
 				184EF1B92898291C0076E5A6 /* Sources */,
 				184EF1BA2898291C0076E5A6 /* Frameworks */,
 				184EF1BB2898291C0076E5A6 /* Resources */,
+				96D0A389F31B1D87D884C28C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +206,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184EF1DA289829840076E5A6 /* IBLViewController.xib in Resources */,
 				184EF1CD2898291E0076E5A6 /* LaunchScreen.storyboard in Resources */,
+				184EF1E6289830C50076E5A6 /* PersonsTableViewCell.xib in Resources */,
 				184EF1CA2898291E0076E5A6 /* Assets.xcassets in Resources */,
-				184EF1C82898291C0076E5A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96D0A389F31B1D87D884C28C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBL/Pods-IBL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IBL/Pods-IBL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBL/Pods-IBL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C083002B613C822083FE3C1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IBL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		184EF1B92898291C0076E5A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184EF1C52898291C0076E5A6 /* ViewController.swift in Sources */,
+				184EF1D9289829840076E5A6 /* IBLViewController.swift in Sources */,
+				184EF1E8289838E70076E5A6 /* IBLExtViewController.swift in Sources */,
+				184EF1DF28982ADA0076E5A6 /* BaseViewController.swift in Sources */,
+				184EF1E128982B370076E5A6 /* PersonModel.swift in Sources */,
 				184EF1C12898291C0076E5A6 /* AppDelegate.swift in Sources */,
-				184EF1C32898291C0076E5A6 /* SceneDelegate.swift in Sources */,
+				184EF1E5289830C50076E5A6 /* PersonsTableViewCell.swift in Sources */,
+				184EF1DC289829D50076E5A6 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		184EF1C62898291C0076E5A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				184EF1C72898291C0076E5A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		184EF1CB2898291E0076E5A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +402,7 @@
 		};
 		184EF1D22898291E0076E5A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AB4B0400A8700060841A88 /* Pods-IBL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +413,6 @@
 				INFOPLIST_FILE = IBL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +430,7 @@
 		};
 		184EF1D32898291E0076E5A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA65AE2B5F9743E31FC5A58B /* Pods-IBL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +441,6 @@
 				INFOPLIST_FILE = IBL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

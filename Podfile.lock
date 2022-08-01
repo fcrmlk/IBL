@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.10)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - ObjectMapper (4.2.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+
+PODFILE CHECKSUM: 8119b1f45d5d7362314f500905c2b69e11f22d35
+
+COCOAPODS: 1.11.2
