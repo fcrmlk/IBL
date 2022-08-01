@@ -10,20 +10,30 @@ import SDWebImage
 
 class PersonsTableViewCell: UITableViewCell {
     
+    
+    //MARK: - IBOutlets
+
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
-    
     @IBOutlet weak var streetLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
+    
+    
+    //MARK: - LifeCycle
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         // Initialization code
     }
+    
+    
+    //MARK: - Functions
+    
     func config(data : Result?) {
-        self.nameLbl.text = "\(data?.name.first ?? "") \(data?.name.last ?? "")"
-        self.streetLbl.text = data?.location.street.name ?? ""
-        self.cityLbl.text = data?.location.city ?? ""
+        self.nameLbl.text = "Name: \(data?.name.first ?? "") \(data?.name.last ?? "")"
+        self.streetLbl.text = "Street: \(data?.location.street.name ?? "")"
+        self.cityLbl.text = "City: \(data?.location.city ?? "")"
         self.setImage(imageView: imgView, url: URL(string:data?.picture.medium ?? "")!)
     }
     
