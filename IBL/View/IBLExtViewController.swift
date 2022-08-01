@@ -37,7 +37,7 @@ extension IBLViewController {
                 print("response = \(response)")
                 DispatchQueue.main.async {
                     self.responseBtn.isHidden = false
-                    self.showAlert(title: "Error!", message: "Website not respond")
+                    self.showAlert(title: "Error!", message: "Try again")
                 }
                 return
             }
@@ -59,7 +59,7 @@ extension IBLViewController {
                 
                 DispatchQueue.main.async {
                     self.responseBtn.isHidden = false
-                    self.showAlert(title: "Error!", message: "Website not respond")
+                    self.showAlert(title: "Error!", message: "Try again")
                     
                 }
             }
