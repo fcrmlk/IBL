@@ -49,6 +49,9 @@ extension IBLViewController {
                         self.tableView.reloadData()
                         self.tableView.isHidden = false
                         self.imgView.isHidden = false
+                        self.nameLbl.isHidden = false
+                        self.nameLbl.text = "\(self.personData?.first?.name.title ?? "") \(self.personData?.first?.name.first ?? "") \(self.personData?.first?.name.last ?? "")"
+                        self.backgroundImg.isHidden = false
                     }
                     
                 }

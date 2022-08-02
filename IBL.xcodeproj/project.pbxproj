@@ -18,6 +18,7 @@
 		184EF1E5289830C50076E5A6 /* PersonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E3289830C50076E5A6 /* PersonsTableViewCell.swift */; };
 		184EF1E6289830C50076E5A6 /* PersonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184EF1E4289830C50076E5A6 /* PersonsTableViewCell.xib */; };
 		184EF1E8289838E70076E5A6 /* IBLExtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E7289838E70076E5A6 /* IBLExtViewController.swift */; };
+		184EF1EA289856F20076E5A6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EF1E9289856F20076E5A6 /* UIView.swift */; };
 		DDD4C5CA20639AFF684F2038 /* Pods_IBL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4366CB79C9C106614FFD590 /* Pods_IBL.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		184EF1E3289830C50076E5A6 /* PersonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewCell.swift; sourceTree = "<group>"; };
 		184EF1E4289830C50076E5A6 /* PersonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonsTableViewCell.xib; sourceTree = "<group>"; };
 		184EF1E7289838E70076E5A6 /* IBLExtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLExtViewController.swift; sourceTree = "<group>"; };
+		184EF1E9289856F20076E5A6 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		BA65AE2B5F9743E31FC5A58B /* Pods-IBL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBL.release.xcconfig"; path = "Target Support Files/Pods-IBL/Pods-IBL.release.xcconfig"; sourceTree = "<group>"; };
 		D4366CB79C9C106614FFD590 /* Pods_IBL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,7 +96,6 @@
 				184EF1DD289829D90076E5A6 /* Utility */,
 				184EF1D4289829460076E5A6 /* Model */,
 				184EF1D52898294D0076E5A6 /* View */,
-				184EF1D6289829540076E5A6 /* Controller */,
 				184EF1C92898291E0076E5A6 /* Assets.xcassets */,
 				184EF1CB2898291E0076E5A6 /* LaunchScreen.storyboard */,
 				184EF1CE2898291E0076E5A6 /* Info.plist */,
@@ -121,16 +122,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		184EF1D6289829540076E5A6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		184EF1DD289829D90076E5A6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				184EF1E9289856F20076E5A6 /* UIView.swift */,
 				184EF1DE28982ADA0076E5A6 /* BaseViewController.swift */,
 				184EF1DB289829D50076E5A6 /* Coordinator.swift */,
 			);
@@ -262,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184EF1EA289856F20076E5A6 /* UIView.swift in Sources */,
 				184EF1D9289829840076E5A6 /* IBLViewController.swift in Sources */,
 				184EF1E8289838E70076E5A6 /* IBLExtViewController.swift in Sources */,
 				184EF1DF28982ADA0076E5A6 /* BaseViewController.swift in Sources */,

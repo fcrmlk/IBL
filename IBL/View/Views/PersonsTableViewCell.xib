@@ -9,39 +9,74 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="236" id="KGk-i7-Jjw" customClass="PersonsTableViewCell" customModule="IBL" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="399" height="236"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="471" id="KGk-i7-Jjw" customClass="PersonsTableViewCell" customModule="IBL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="471"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="399" height="236"/>
+                <rect key="frame" x="0.0" y="0.0" width="461" height="471"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-iB-MfA">
-                        <rect key="frame" x="20" y="93" width="50" height="50"/>
+                        <rect key="frame" x="20" y="210.5" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="X6s-Su-7Ji"/>
                             <constraint firstAttribute="height" constant="50" id="qN7-jw-bk1"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="FYa-Cq-ET7">
-                        <rect key="frame" x="90" y="74.5" width="46.5" height="87.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FYa-Cq-ET7">
+                        <rect key="frame" x="90" y="20" width="361" height="431"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kih-vW-8fY">
-                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1md-XR-pd4">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-S4-kk6">
-                                <rect key="frame" x="0.0" y="33.5" width="46.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YXE-yF-N22">
+                                <rect key="frame" x="0.0" y="64.5" width="361" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-ZI-fuw">
+                                <rect key="frame" x="0.0" y="129" width="361" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="g4W-EK-Zxd">
+                                <rect key="frame" x="0.0" y="193.5" width="361" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q8Y-8A-DX4" userLabel="phone">
+                                <rect key="frame" x="0.0" y="257.5" width="361" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-0Z-w1T">
-                                <rect key="frame" x="0.0" y="67" width="46.5" height="20.5"/>
+                                <rect key="frame" x="0.0" y="322" width="361" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-S4-kk6">
+                                <rect key="frame" x="0.0" y="386.5" width="361" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -49,19 +84,27 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="n8h-iB-MfA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Ww-Rf-bh4"/>
+                    <constraint firstAttribute="trailing" secondItem="FYa-Cq-ET7" secondAttribute="trailing" constant="10" id="DIj-xv-2B5"/>
                     <constraint firstItem="n8h-iB-MfA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="GtF-2Y-kqX"/>
+                    <constraint firstAttribute="bottom" secondItem="FYa-Cq-ET7" secondAttribute="bottom" constant="20" id="LHF-gO-1SE"/>
+                    <constraint firstItem="FYa-Cq-ET7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="PnF-e6-0NO"/>
                     <constraint firstItem="FYa-Cq-ET7" firstAttribute="centerY" secondItem="n8h-iB-MfA" secondAttribute="centerY" id="ax6-hq-HU5"/>
                     <constraint firstItem="FYa-Cq-ET7" firstAttribute="leading" secondItem="n8h-iB-MfA" secondAttribute="trailing" constant="20" id="pZ1-MY-8Q2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cityLbl" destination="eUV-S4-kk6" id="wU5-w7-Wjg"/>
+                <outlet property="dobLbl" destination="YXE-yF-N22" id="mY2-b3-HRL"/>
+                <outlet property="emailLbl" destination="lvh-ZI-fuw" id="uSi-VO-XQo"/>
+                <outlet property="gender" destination="1md-XR-pd4" id="4oe-87-zsU"/>
                 <outlet property="imgView" destination="n8h-iB-MfA" id="VAo-Pr-Zsv"/>
-                <outlet property="nameLbl" destination="kih-vW-8fY" id="ZCg-4a-6g6"/>
+                <outlet property="phoneNumber" destination="q8Y-8A-DX4" id="aWx-GM-4kf"/>
                 <outlet property="streetLbl" destination="dUl-0Z-w1T" id="K1J-0E-Dy7"/>
+                <outlet property="userName" destination="g4W-EK-Zxd" id="wfx-fA-mBk"/>
             </connections>
-            <point key="canvasLocation" x="80.434782608695656" y="174.10714285714286"/>
+            <point key="canvasLocation" x="35.507246376811594" y="252.79017857142856"/>
         </tableViewCell>
     </objects>
 </document>

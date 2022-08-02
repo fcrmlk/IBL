@@ -18,6 +18,8 @@ class IBLViewController: BaseViewController {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var responseBtn: UIButton!
+    @IBOutlet weak var backgroundImg: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
     
     //MARK: - Variables
     
@@ -37,7 +39,11 @@ class IBLViewController: BaseViewController {
         
     }
     
-
+    @IBAction func refresh(_ sender: Any) {
+        self.fetchPersonData()
+        self.responseBtn.isHidden = true
+    }
+    
 }
 
 extension IBLViewController : UITableViewDelegate,UITableViewDataSource{
@@ -53,10 +59,6 @@ extension IBLViewController : UITableViewDelegate,UITableViewDataSource{
         
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        350
-        
-    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }

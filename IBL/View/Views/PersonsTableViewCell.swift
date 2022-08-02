@@ -17,6 +17,11 @@ class PersonsTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var streetLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var gender: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var dobLbl: UILabel!
+    @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var userName: UILabel!
     
     
     //MARK: - LifeCycle
@@ -31,9 +36,13 @@ class PersonsTableViewCell: UITableViewCell {
     //MARK: - Functions
     
     func config(data : Result?) {
-        self.nameLbl.text = "Name: \(data?.name.first ?? "") \(data?.name.last ?? "")"
-        self.streetLbl.text = "Street: \(data?.location.street.name ?? "")"
-        self.cityLbl.text = "City: \(data?.location.city ?? "")"
+        self.gender.text = "Gender: \(data?.gender ?? "")"
+        self.emailLbl.text = "Email: \(data?.email ?? "")"
+        self.userName.text = "UserName: \(data?.login.username ?? "")"
+        self.dobLbl.text = "Age: \(data?.dob.age ?? 0)"
+        self.cityLbl.text = "Location: \(data?.location.city ?? ""),\(data?.location.country ?? "")"
+        self.phoneNumber.text = "Phone: \(data?.phone ?? "")"
+        self.streetLbl.text = "Street: \(data?.location.street.name ?? "") \(data?.location.street.number ?? 0)"
         self.setImage(imageView: imgView, url: URL(string:data?.picture.medium ?? "")!)
     }
     
