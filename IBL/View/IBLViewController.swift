@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MapKit
 
 class IBLViewController: BaseViewController {
 
@@ -17,36 +17,32 @@ class IBLViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var responseBtn: UIButton!
-    @IBOutlet weak var backgroundImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     
     //MARK: - Variables
     
     var personData : [Result]?
     
-    
     //MARK: - LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.fetchPersonData()
         self.activityIndicator.isHidden = true
     }
 
-    @IBAction func getRespose(_ sender: UIButton) {
-        self.fetchPersonData()
-        sender.isHidden = true
-        
-    }
+
     
     @IBAction func refresh(_ sender: Any) {
         self.fetchPersonData()
-        self.responseBtn.isHidden = true
     }
     
 }
 
 extension IBLViewController : UITableViewDelegate,UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.personData?.count ?? 0
     }
@@ -57,6 +53,9 @@ extension IBLViewController : UITableViewDelegate,UITableViewDataSource{
         cell.config(data: self.personData?[indexPath.row])
         return cell
         
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        "Information"
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

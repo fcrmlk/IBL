@@ -29,15 +29,16 @@ extension IBLViewController {
             guard let data = data,
                   let response = response as? HTTPURLResponse,
                   error == nil else {
-                      print("error", error ?? "Unknown error")
+                DispatchQueue.main.async {
+                    self.showAlert(title: "Error!", message: "Check your internet connection")
+                }
                       return
                   }
             guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
                 print("statusCode should be 2xx, but is \(response.statusCode)")
                 print("response = \(response)")
                 DispatchQueue.main.async {
-                    self.responseBtn.isHidden = false
-                    self.showAlert(title: "Error!", message: "Try again")
+                    self.fetchPersonData()
                 }
                 return
             }
@@ -51,7 +52,6 @@ extension IBLViewController {
                         self.imgView.isHidden = false
                         self.nameLbl.isHidden = false
                         self.nameLbl.text = "\(self.personData?.first?.name.title ?? "") \(self.personData?.first?.name.first ?? "") \(self.personData?.first?.name.last ?? "")"
-                        self.backgroundImg.isHidden = false
                     }
                     
                 }
@@ -59,11 +59,9 @@ extension IBLViewController {
                 
             }
             else {
-                
+                print("Failed")
                 DispatchQueue.main.async {
-                    self.responseBtn.isHidden = false
-                    self.showAlert(title: "Error!", message: "Try again")
-                    
+                    self.fetchPersonData()
                 }
             }
         }

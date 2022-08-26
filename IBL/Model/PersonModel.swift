@@ -16,59 +16,59 @@ struct Welcome: Codable {
 
 // MARK: - Info
 struct Info: Codable {
-    let seed: String
-    let results, page: Int
-    let version: String
+    let seed: String?
+    let results, page: Int?
+    let version: String?
 }
 
 // MARK: - Result
 struct Result: Codable {
-    let gender: String
+    let gender: String?
     let name: Name
     let location: Location
-    let email: String
+    let email: String?
     let login: Login
     let dob, registered: Dob
-    let phone, cell: String
+    let phone, cell: String?
     let id: ID
     let picture: Picture
-    let nat: String
+    let nat: String?
 }
 
 // MARK: - Dob
 struct Dob: Codable {
-    let date: String
-    let age: Int
+    let date: String?
+    let age: Int?
 }
 
 // MARK: - ID
 struct ID: Codable {
-    let name, value: String
+    let name, value: String?
 }
 
 // MARK: - Location
 struct Location: Codable {
     let street: Street
-    let city, state, country: String
-    let postcode: Int
+    let city, state, country: String?
+    let postcode: Int?
     let coordinates: Coordinates
     let timezone: Timezone
 }
 
 // MARK: - Coordinates
 struct Coordinates: Codable {
-    let latitude, longitude: String
+    let latitude, longitude: String?
 }
 
 // MARK: - Street
 struct Street: Codable {
-    let number: Int
-    let name: String
+    let number: Int?
+    let name: String?
 }
 
 // MARK: - Timezone
 struct Timezone: Codable {
-    let offset, timezoneDescription: String
+    let offset, timezoneDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case offset
@@ -78,17 +78,17 @@ struct Timezone: Codable {
 
 // MARK: - Login
 struct Login: Codable {
-    let uuid, username, password, salt: String
-    let md5, sha1, sha256: String
+    let uuid, username, password, salt: String?
+    let md5, sha1, sha256: String?
 }
 
 // MARK: - Name
 struct Name: Codable {
-    let title, first, last: String
+    let title, first, last: String?
 }
 
 // MARK: - Picture
 struct Picture: Codable {
-    let large, medium, thumbnail: String
+    let large, medium, thumbnail: String?
 }
 
